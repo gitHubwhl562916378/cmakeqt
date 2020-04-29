@@ -4,6 +4,8 @@ project(cmakeqt)
 
 set(Qt5_DIR /home/whl/Qt5.9.3/5.9.3/gcc_64/lib/cmake/Qt5)
 set(CMAKE_AUTOMOC ON) #自动生成moc文件
+set(CMAKE_AUTORCC ON) #自动处理rcc文件
+set(CMAKE_AUTOUIC ON) #自动处理uic
 #查找当前文件夹中的所有源代码文件，也可以通过Set命令将所有文件设置为一个变量
 FILE(GLOB SRC_FILES "./*.cpp") 
 #同理，查找当前文件夹中所有的头文件
